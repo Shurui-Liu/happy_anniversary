@@ -5,8 +5,8 @@ const HomePage = () => {
   const [error, setError] = useState(false);
 
   const handleSubmit = () => {
-    if (password.trim() === "purpleheart") {
-      window.location.href = "/game"; 
+    if (password.trim() === "10040710") {
+      window.location.href = "/our-year"; 
     } else {
       setError(true);
     }
