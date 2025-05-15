@@ -12,7 +12,7 @@ const OneYearPage = () => {
   const navigate = useNavigate();
 
   const goToMonth = (month) => {
-    navigate(`/one-year/${month}`);
+    navigate(`/our-year/${month}`);
   };
 
   return (

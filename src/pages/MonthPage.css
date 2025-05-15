@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to bottom right, #fff4cc, #e6ccff);
+  color: #4b0082;
+}
+
+.month-container {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.month-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.clue {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-box {
+  max-width: 500px;
+  width: 100%;
+}
+
+.quiz-option {
+  display: block;
+  background: white;
+  color: #4b0082;
+  border: 2px solid #4b0082;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 0.5rem auto;
+  width: 100%;
+  max-width: 360px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quiz-option:hover {
+  background-color: #fff0f8;
+}
+
+.quiz-option.selected {
+  background-color: #d9b3ff;
+  border-color: #7a00cc;
+  color: white;
+}
+
+.memory-reveal {
+  max-width: 500px;
+}
+
+.memory-photo {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.memory-note {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
