@@ -1,0 +1,57 @@
+import React, { useState } from "react";
+import "./MonthPage.css";
+
+const Nov = () => {
+  const [answered, setAnswered] = useState(false);
+  const [selected, setSelected] = useState(null);
+  const correctAnswer = "in Mount Pleasant";
+
+  const options = [
+    "in Chilliwack, yay! ",
+    "in Kitsilano",
+    "in Mount Pleasant",
+  ];
+
+  const handleClick = (option) => {
+    setSelected(option);
+    console.log("Selected option:", option);
+    if (option === correctAnswer) {
+      setTimeout(() => setAnswered(true), 600); // slight delay for effect
+    }
+  };
+
+  return (
+    <div className="month-container">
+      {!answered ? (
+        <div className="quiz-box">
+          <p className="clue">For the first time, we went to a stand-up comedy together</p>
+          {options.map((option, index) => (
+            <button
+              key={index}
+              className={`quiz-option ${selected === option ? "selected" : ""}`}
+              onClick={() => handleClick(option)}
+            >
+              {option}
+            </button>
+          ))}
+        </div>
+      ) : (
+        <div className="memory-reveal">
+          <img
+            src="https://placekitten.com/400/300" // replace with your real photo
+            alt="Memory from May"
+            className="memory-photo"
+          />
+            <h2 className="memory-title">November 2024</h2>
+          <p className="memory-note">
+            I took a great photo of you.
+            <br />
+            What a skillful photographer I am! 📸
+          </p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Nov;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./MonthPage.css";
 
-const Aug = () => {
+const Sep = () => {
   const [answered, setAnswered] = useState(false);
   const [selected, setSelected] = useState(null);
   const correctAnswer = "Found an abandoned zoo";
@@ -54,4 +54,4 @@ const Aug = () => {
   );
 };
 
-export default Aug;
+export default Sep;
