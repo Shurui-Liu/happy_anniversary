@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./MonthPage.css";
+import FebImage from "../assets/images/Feb/Feb.jpg"; // replace with your real photo
 
 const Feb = () => {
   const [answered, setAnswered] = useState(false);
   const [selected, setSelected] = useState(null);
-  const correctAnswer = "A sunny day in Brentwood";
+  const correctAnswer = "The MOA finally reopened! ";
 
   const options = [
     "The MOA finally reopened! ",
@@ -38,8 +39,8 @@ const Feb = () => {
       ) : (
         <div className="memory-reveal">
           <img
-            src="https://placekitten.com/400/300" // replace with your real photo
-            alt="Memory from May"
+            src={FebImage} // replace with your real photo
+            alt="Memory from Feb"
             className="memory-photo"
           />
             <h2 className="memory-title">Feb 2025</h2>

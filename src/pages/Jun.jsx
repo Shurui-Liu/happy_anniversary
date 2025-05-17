@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./MonthPage.css";
+import JunImage from "../assets/images/Jun/Jun.jpg";
 
 const Jun = () => {
   const [answered, setAnswered] = useState(false);
@@ -38,15 +39,15 @@ const Jun = () => {
       ) : (
         <div className="memory-reveal">
           <img
-            src="https://placekitten.com/400/300" // replace with your real photo
-            alt="Memory from May"
+            src={JunImage}
+            alt="Memory from June"
             className="memory-photo"
           />
             <h2 className="memory-title">June 2024</h2>
           <p className="memory-note">
-            We met for the very first time under that golden spring sun ☀️
+            I realized I was gradually falling for you.
             <br />
-            You looked at me like you already knew me. I’ll never forget it.
+            I got to know your heart and soul, and I fell in love with them.
           </p>
         </div>
       )}
