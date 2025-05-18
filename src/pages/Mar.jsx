@@ -5,7 +5,7 @@ import MarImage from "../assets/images/Mar/Mar-1.jpg"; // replace with your real
 const Mar = () => {
   const [answered, setAnswered] = useState(false);
   const [selected, setSelected] = useState(null);
-  const correctAnswer = "Nice spinach dip! ";
+  const correctAnswer = "Nice spinach dip!";
   const options = [
     "Great fries! ",
     "Good fish and chips!",

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./MonthPage.css";
+import NovImage from "../assets/images/Nove/Nov-2.jpg"; // replace with your real photo
 
 const Nov = () => {
   const [answered, setAnswered] = useState(false);
@@ -38,8 +39,8 @@ const Nov = () => {
       ) : (
         <div className="memory-reveal">
           <img
-            src="https://placekitten.com/400/300" // replace with your real photo
-            alt="Memory from May"
+            src={NovImage} // replace with your real photo
+            alt="Memory from Nov"
             className="memory-photo"
           />
             <h2 className="memory-title">November 2024</h2>

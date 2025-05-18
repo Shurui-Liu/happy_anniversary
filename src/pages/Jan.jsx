@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./MonthPage.css";
-import JanImage from "../assets/images/Jan/Jan-12.jpg";
 import JanImage2 from "../assets/images/Jan/Jan-13.jpg";
 
 const Jan = () => {

@@ -43,7 +43,7 @@ const May = () => {
             alt="Memory from May"
             className="memory-photo"
           />
-            <h2 className="memory-title">May 2023</h2>
+            <h2 className="memory-title">May 2024</h2>
           <p className="memory-note">
             We met for the very first time in Brentwood. I planned 20 minutes, but we ended up spending 2 hours together.
             <br />
