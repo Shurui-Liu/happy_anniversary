@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import "./OurYearPage.css";
 
 const months = [
-  "Jan", "Feb", "Mar", "Apr",
-  "May", "Jun", "Jul", "Aug",
-  "Sep", "Oct", "Nov", "Dec"
+  "Aug", "Oct", "Feb", "May", 
+  "Mar", "Jul", "Sep",  "Apr", 
+  "Nov", "Jan", "Jun", "Dec"
 ];
 
 const OneYearPage = () => {
