@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./MonthPage.css";
 import JunImage from "../assets/images/Jun/Jun.jpg";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Jun = () => {
   const [answered, setAnswered] = useState(false);
@@ -19,6 +20,10 @@ const Jun = () => {
     if (option === correctAnswer) {
       setTimeout(() => setAnswered(true), 600); // slight delay for effect
     }
+  };
+  const navigate = useNavigate();
+  const goHome = () => {
+    navigate("/our-year");
   };
 
   return (
@@ -49,6 +54,9 @@ const Jun = () => {
             <br />
             I got to know your heart and soul, and I fell in love with them.
           </p>
+          <button className="home-button" onClick={goHome}>
+            🏠 Back to Home
+          </button>
         </div>
       )}
     </div>

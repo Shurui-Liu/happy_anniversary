@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./MonthPage.css";
 import JanImage2 from "../assets/images/Jan/Jan-13.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Jan = () => {
   const [answered, setAnswered] = useState(false);
@@ -19,6 +20,10 @@ const Jan = () => {
     if (option === correctAnswer) {
       setTimeout(() => setAnswered(true), 600); // slight delay for effect
     }
+  };
+  const navigate = useNavigate();
+  const goHome = () => {
+    navigate("/our-year");
   };
 
   return (
@@ -47,6 +52,9 @@ const Jan = () => {
           <p className="memory-note">
             You look super cute even when pointing ur mid finger at the light :D
           </p>
+          <button className="home-button" onClick={goHome}>
+            🏠 Back to Home
+          </button>
         </div>
       )}
     </div>

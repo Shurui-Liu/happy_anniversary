@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import JulyImage from "../assets/images/Jul/Jul-2.jpg"; // replace with your real photo
 import "./MonthPage.css";
+import { useNavigate } from "react-router-dom";
 
 const Jul = () => {
   const [answered, setAnswered] = useState(false);
@@ -19,6 +20,11 @@ const Jul = () => {
     if (option === correctAnswer) {
       setTimeout(() => setAnswered(true), 600); // slight delay for effect
     }
+  };
+
+  const navigate = useNavigate();
+  const goHome = () => {
+    navigate("/our-year");
   };
 
   return (
@@ -49,6 +55,10 @@ const Jul = () => {
             <br />
             You sent me a beautiful photo of sunset on my b-day. That was an amazing birthday gift, inadvertently.
           </p>
+          <button className="home-button" onClick={goHome}>
+            🏠 Back to Home
+          </button>
+          
         </div>
       )}
     </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./MonthPage.css";
 import AprImage from "../assets/images/Apr/Apr.jpg"; // replace with your real photo
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Apr = () => {
   const [answered, setAnswered] = useState(false);
@@ -19,6 +20,10 @@ const Apr = () => {
       setTimeout(() => setAnswered(true), 600); // slight delay for effect
     }
   };
+    const navigate = useNavigate();
+    const goHome = () => {
+        navigate("/our-year");
+    }
 
   return (
     <div className="month-container">
@@ -48,6 +53,9 @@ const Apr = () => {
             <br />
             And... congrats on finishing the run! I was so proud of you.
           </p>
+          <button className="home-button" onClick={goHome}>
+            🏠 Back to Home
+          </button>
         </div>
       )}
     </div>

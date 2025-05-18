@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./MonthPage.css";
 import MayImage from "../assets/images/May/May.jpg";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const May = () => {
   const [answered, setAnswered] = useState(false);
@@ -20,6 +21,10 @@ const May = () => {
       setTimeout(() => setAnswered(true), 600); // slight delay for effect
     }
   };
+  const navigate = useNavigate();
+  const goHome = () => {
+    navigate("/our-year");
+  }
 
   return (
     <div className="month-container">
@@ -49,6 +54,9 @@ const May = () => {
             <br />
             I'll always remember your smile. 
           </p>
+          <button className="home-button" onClick={goHome}>
+            🏠 Back to Home
+          </button>
         </div>
       )}
     </div>

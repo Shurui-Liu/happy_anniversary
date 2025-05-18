@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import "./MonthPage.css";
 import DecImage from "../assets/images/Dec/Dec.jpg"; // replace with your real photo
@@ -20,6 +21,11 @@ const Dec = () => {
       setTimeout(() => setAnswered(true), 600); // slight delay for effect
     }
   };
+  const navigate = useNavigate();
+  const goHome = () => {
+    navigate("/our-year");
+  }
+
 
   return (
     <div className="month-container">
@@ -49,6 +55,9 @@ const Dec = () => {
             <br />
             But I did have fun. Because I was with you. Always so many laughs, clicks, and good times.
           </p>
+          <button className="home-button" onClick={goHome}>
+            🏠 Back to Home
+          </button>
         </div>
       )}
     </div>
