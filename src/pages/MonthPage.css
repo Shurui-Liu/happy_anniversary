@@ -71,3 +71,24 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
+.home-button {
+  margin-top: 2rem;
+  background-color: #ffdd57; /* Soft yellow */
+  color: #4b0082;            /* Deep purple text */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 300px;
+}
+
+.home-button:hover {
+  background-color: #ffe87c;
+  transform: scale(1.02);
+}
