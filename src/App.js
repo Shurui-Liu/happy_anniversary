@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -8,7 +7,7 @@ import May from './pages/May';
 import Jun from './pages/Jun';
 import Jul from './pages/Jul';
 import Aug from './pages/Aug';
-import Sep from './pages/Sep.jsx';
+import Sep from './pages/Sep';
 import Oct from './pages/Oct';
 import Nov from './pages/Nov';
 import Dec from './pages/Dec';
